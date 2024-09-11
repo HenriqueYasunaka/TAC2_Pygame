@@ -3,6 +3,7 @@ from pygame.locals import *
 from sys import exit
 from random import randint
 
+#inicializa as expecificações do quadro
 PRETO = (0, 0, 0)
 LARGURA = 640
 ALTURA = 480
@@ -14,8 +15,10 @@ y_azul = randint(50, 430)
 pontos = 0
 pygame.init()
 
+#inicia imagem de fundo
 imagem_fundo = pygame.image.load('BackGround.jpg')
 
+#inicia musica
 musica_de_fundo = pygame.mixer.music.load('I Know You are Out There.mp3')
 pygame.mixer.music.play(-1)
 
